@@ -1,9 +1,11 @@
 import sys
-
+from Game import Game
 import pygame
 
+game = Game()
+
 pygame.init()
-screen = pygame.display.set_mode((768, 768))
+screen = pygame.display.set_mode((game.BOARD_WIDTH, game.BOARD_HEIGHT))
 pygame.display.set_caption('Chess')
 
 while True:
